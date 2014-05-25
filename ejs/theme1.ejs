@@ -1,3 +1,14 @@
 
-<a href = '#forum/GetMessages'> Theme Z </a> 
-<a href = '#forum/GetMessages'> T2 </a> 
+
+<%
+
+for (var i = 0; i < this.theme_name.length; i++)
+{%>
+	<div> <a href = '#forum/GetMessages'> <%= this.theme_name[i].theme %> </a> </div>
+	<b><%= this.theme_name[i].time %></b>
+	<%= this.theme_name[i].num_messages %>
+<%}
+%>
+
+
+
