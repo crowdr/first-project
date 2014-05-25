@@ -1,0 +1,9 @@
+Форум
+
+<%
+for (var i = 0; i < this.messages.length; i++)
+{%>
+	<div> <%= this.messages[i].name %>
+	<%= this.messages[i].text %> </div>
+<%}
+%>
